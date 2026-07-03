@@ -5,21 +5,74 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BTS MS — English Worksheets</title>
 <style>
+  :root{--card:#fff;--ink:#16332a;--muted:#5f6a75;--accent:#127a55;}
+  *{box-sizing:border-box;}
   body{font-family:system-ui,-apple-system,sans-serif;background:linear-gradient(135deg,#eafff4,#eafaff);
-    color:#16332a;margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:24px;}
+    color:var(--ink);margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:32px 20px 48px;}
   h1{font-size:28px;text-align:center;margin:0 0 6px;}
-  p{color:#5f6a75;text-align:center;margin:0 0 24px;}
-  a.chap{display:block;max-width:440px;width:100%;background:#fff;border-radius:20px;padding:18px 22px;margin:10px 0;
-    box-shadow:0 10px 26px rgba(40,90,70,.14);text-decoration:none;color:#127a55;font-weight:700;font-size:18px;
-    border:2px solid #fff;transition:.15s;}
-  a.chap:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(40,90,70,.22);}
-  a.chap small{display:block;color:#9aa6b2;font-weight:600;font-size:13px;margin-top:2px;}
+  .sub{color:var(--muted);text-align:center;margin:0 0 6px;font-size:15px;}
+  .home{color:var(--accent);text-align:center;margin:0 0 28px;font-size:13px;font-weight:600;word-break:break-all;}
+  .wrap{width:100%;max-width:520px;display:flex;flex-direction:column;gap:16px;}
+  .card{background:var(--card);border-radius:20px;padding:20px 22px;box-shadow:0 10px 26px rgba(40,90,70,.14);}
+  .card h2{margin:0 0 4px;font-size:19px;}
+  .card h2 a{color:var(--accent);text-decoration:none;}
+  .card h2 a:hover{text-decoration:underline;}
+  .desc{color:var(--muted);font-size:13.5px;line-height:1.45;margin:0 0 14px;}
+  .linkrow{display:flex;align-items:center;gap:8px;background:#f3f7f5;border:1px solid #e2ebe6;
+    border-radius:12px;padding:8px 10px;}
+  .url{flex:1;font-family:ui-monospace,Menlo,monospace;font-size:12px;color:#2b4a3d;
+    overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;}
+  .copy{flex:none;background:var(--accent);color:#fff;border:none;border-radius:9px;
+    padding:7px 12px;font-size:12.5px;font-weight:700;cursor:pointer;transition:.15s;}
+  .copy:hover{background:#0e6244;}
+  .copy.done{background:#2e9e6e;}
+  .tag{display:inline-block;background:#eafaf3;color:var(--accent);font-size:11px;font-weight:700;
+    border-radius:999px;padding:2px 9px;margin-left:6px;vertical-align:middle;}
+  footer{margin-top:32px;color:#9aa6b2;font-size:12px;text-align:center;max-width:520px;line-height:1.5;}
 </style>
 </head>
 <body>
   <h1>🏗️ BTS MS — English Worksheets</h1>
-  <p>Industrial Maintenance · English · self-marking</p>
-  <a class="chap" href="crane-installation/">Heavy Lift &amp; Installation<small>Crane delivery &amp; installation · reading &amp; grammar · /20 · B1–B2</small></a>
-  <a class="chap" href="insurance-audit/">🛡️ The Insurance Audit<small>Risk-survey visit to a factory · reading &amp; grammar · /20 · B1–B2</small></a>
+  <p class="sub">Industrial Maintenance · carnets d'exercices interactifs · auto-corrigés /20</p>
+  <p class="home">🏠 https://thomasseanmurphy-lgtm.github.io/bts-ms-english/</p>
+
+  <div class="wrap">
+
+    <div class="card">
+      <h2><a href="crane-installation/">🏗️ Heavy Lift &amp; Installation</a><span class="tag">B1–B2</span></h2>
+      <p class="desc">Théo supervise la livraison et l'installation d'une presse lourde par grue (+ dialogue de chantier). Vocabulaire, temps (present simple / prétérit / present perfect), traduction, FOR vs TO, discours rapporté.</p>
+      <div class="linkrow">
+        <span class="url">https://thomasseanmurphy-lgtm.github.io/bts-ms-english/crane-installation/</span>
+        <button class="copy" data-url="https://thomasseanmurphy-lgtm.github.io/bts-ms-english/crane-installation/">Copier</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2><a href="insurance-audit/">🛡️ The Insurance Audit</a><span class="tag">B1–B2</span></h2>
+      <p class="desc">Visite d'audit d'un assureur dans une usine : inspection des risques et de la maintenance. Reading, vocabulaire technique, grammaire et traduction.</p>
+      <div class="linkrow">
+        <span class="url">https://thomasseanmurphy-lgtm.github.io/bts-ms-english/insurance-audit/</span>
+        <button class="copy" data-url="https://thomasseanmurphy-lgtm.github.io/bts-ms-english/insurance-audit/">Copier</button>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    À partager aux élèves : copier le lien et le coller dans un e-mail (ne pas envoyer le fichier HTML en pièce jointe — il ne s'ouvre pas sur iPhone).<br>
+    Chaque carnet s'ouvre dans Safari/Chrome, se corrige tout seul sur /20 et génère un code de résultat à te renvoyer.
+  </footer>
+
+<script>
+  document.querySelectorAll('.copy').forEach(function(b){
+    b.addEventListener('click',function(){
+      var u=b.getAttribute('data-url');
+      navigator.clipboard.writeText(u).then(function(){
+        var t=b.textContent;b.textContent='✓ Copié';b.classList.add('done');
+        setTimeout(function(){b.textContent=t;b.classList.remove('done');},1600);
+      });
+    });
+  });
+</script>
 </body>
 </html>
