@@ -202,7 +202,7 @@
 <body>
 
 <span class="deco d1">🏗️</span><span class="deco d2">⚙️</span><span class="deco d3">🔧</span><span class="deco d4">🏭</span>
-<div id="confetti"></div>
+<canvas id="confetti"></canvas>
 
 <div class="page">
 
@@ -240,14 +240,14 @@
   <div class="card c-pink">
     <div class="head"><span class="ico">🧩</span><h3>Match the word &amp; the meaning</h3><span class="pts">8 pts</span></div>
     <ol class="q vmatch">
-      <li>a tall machine that lifts and moves very heavy loads → <select class="wide" id="a1_1"><option value=""></option><option>commissioning</option><option>foreman</option><option>to align</option><option>anchor bolt</option><option>crane</option><option>hazard</option><option>sling</option><option>load</option></select></li>
-      <li>the heavy object that is lifted → <select class="wide" id="a1_2"><option value=""></option><option>anchor bolt</option><option>crane</option><option>sling</option><option>hazard</option><option>to align</option><option>load</option><option>commissioning</option><option>foreman</option></select></li>
-      <li>the strap or chain that attaches the load to the hook → <select class="wide" id="a1_3"><option value=""></option><option>anchor bolt</option><option>hazard</option><option>foreman</option><option>sling</option><option>load</option><option>commissioning</option><option>to align</option><option>crane</option></select></li>
-      <li>a bolt that fixes a machine firmly to the floor → <select class="wide" id="a1_4"><option value=""></option><option>crane</option><option>anchor bolt</option><option>commissioning</option><option>to align</option><option>load</option><option>hazard</option><option>sling</option><option>foreman</option></select></li>
-      <li>to set something in the correct straight position → <select class="wide" id="a1_5"><option value=""></option><option>sling</option><option>foreman</option><option>load</option><option>crane</option><option>to align</option><option>anchor bolt</option><option>commissioning</option><option>hazard</option></select></li>
-      <li>the final tests before a new machine is put into service → <select class="wide" id="a1_6"><option value=""></option><option>foreman</option><option>anchor bolt</option><option>commissioning</option><option>load</option><option>to align</option><option>crane</option><option>sling</option><option>hazard</option></select></li>
-      <li>the worker who supervises the team on site → <select class="wide" id="a1_7"><option value=""></option><option>hazard</option><option>anchor bolt</option><option>sling</option><option>load</option><option>commissioning</option><option>foreman</option><option>crane</option><option>to align</option></select></li>
-      <li>something that could cause an accident or injury → <select class="wide" id="a1_8"><option value=""></option><option>commissioning</option><option>hazard</option><option>anchor bolt</option><option>load</option><option>to align</option><option>foreman</option><option>crane</option><option>sling</option></select></li>
+      <li>a tall machine that lifts and moves very heavy loads → <select class="wide" id="a1_1"><option value=""></option><option>sling</option><option>load</option><option>commissioning</option><option>anchor bolt</option><option>to align</option><option>hazard</option><option>crane</option><option>foreman</option></select></li>
+      <li>the heavy object that is lifted → <select class="wide" id="a1_2"><option value=""></option><option>hazard</option><option>sling</option><option>crane</option><option>commissioning</option><option>load</option><option>to align</option><option>foreman</option><option>anchor bolt</option></select></li>
+      <li>the strap or chain that attaches the load to the hook → <select class="wide" id="a1_3"><option value=""></option><option>load</option><option>crane</option><option>hazard</option><option>sling</option><option>to align</option><option>commissioning</option><option>anchor bolt</option><option>foreman</option></select></li>
+      <li>a bolt that fixes a machine firmly to the floor → <select class="wide" id="a1_4"><option value=""></option><option>to align</option><option>foreman</option><option>load</option><option>anchor bolt</option><option>sling</option><option>crane</option><option>hazard</option><option>commissioning</option></select></li>
+      <li>to set something in the correct straight position → <select class="wide" id="a1_5"><option value=""></option><option>commissioning</option><option>foreman</option><option>anchor bolt</option><option>sling</option><option>crane</option><option>hazard</option><option>to align</option><option>load</option></select></li>
+      <li>the final tests before a new machine is put into service → <select class="wide" id="a1_6"><option value=""></option><option>foreman</option><option>load</option><option>crane</option><option>anchor bolt</option><option>commissioning</option><option>sling</option><option>to align</option><option>hazard</option></select></li>
+      <li>the worker who supervises the team on site → <select class="wide" id="a1_7"><option value=""></option><option>commissioning</option><option>anchor bolt</option><option>load</option><option>to align</option><option>foreman</option><option>crane</option><option>hazard</option><option>sling</option></select></li>
+      <li>something that could cause an accident or injury → <select class="wide" id="a1_8"><option value=""></option><option>sling</option><option>anchor bolt</option><option>commissioning</option><option>foreman</option><option>load</option><option>to align</option><option>crane</option><option>hazard</option></select></li>
     </ol>
     <div class="modfoot"><button type="button" class="btn-val" data-act="validate" data-sec="A1 Match">✓ Validate</button><span class="modmsg"></span></div>
   </div>
@@ -257,14 +257,14 @@
     <div class="head"><span class="ico">⏳</span><h3>Present simple, past simple or present perfect?</h3><span class="pts">8 pts</span></div>
     <p class="instr">Le repère de temps t'indique le temps à choisir.</p>
     <ol class="q">
-      <li>Théo <span class="tw">usually</span> <select id="tn_1"><option value=""></option><option>supervised</option><option>supervises</option><option>has supervised</option></select> the maintenance team.</li>
+      <li>Théo <span class="tw">usually</span> <select id="tn_1"><option value=""></option><option>supervises</option><option>supervised</option><option>has supervised</option></select> the maintenance team.</li>
       <li>A good foreman <span class="tw">always</span> <select id="tn_2"><option value=""></option><option>prepared</option><option>prepares</option><option>has prepared</option></select> a lifting plan first.</li>
-      <li><span class="tw">Yesterday</span>, the crane <select id="tn_3"><option value=""></option><option>lifted</option><option>has lifted</option><option>lifts</option></select> the new press into the workshop.</li>
-      <li><span class="tw">Last week</span>, the supplier <select id="tn_4"><option value=""></option><option>delivered</option><option>delivers</option><option>has delivered</option></select> the equipment on two trucks.</li>
-      <li><span class="tw">Since this morning</span>, the team <select id="tn_5"><option value=""></option><option>bolted</option><option>has bolted</option><option>bolts</option></select> the machine to the floor.</li>
-      <li>The engineers <select id="tn_6"><option value=""></option><option>have checked</option><option>check</option><option>checked</option></select> the alignment <span class="tw">for two hours</span> now.</li>
-      <li>The technician has <span class="tw">just</span> <select id="tn_7"><option value=""></option><option>finished</option><option>finishes</option><option>finish</option></select> the safety test.</li>
-      <li><select id="tn_8"><option value=""></option><option>Did</option><option>Does</option><option>Has</option></select> the machine start correctly <span class="tw">last night</span>?</li>
+      <li><span class="tw">Yesterday</span>, the crane <select id="tn_3"><option value=""></option><option>lifts</option><option>has lifted</option><option>lifted</option></select> the new press into the workshop.</li>
+      <li><span class="tw">Last week</span>, the supplier <select id="tn_4"><option value=""></option><option>delivers</option><option>has delivered</option><option>delivered</option></select> the equipment on two trucks.</li>
+      <li><span class="tw">Since this morning</span>, the team <select id="tn_5"><option value=""></option><option>has bolted</option><option>bolts</option><option>bolted</option></select> the machine to the floor.</li>
+      <li>The engineers <select id="tn_6"><option value=""></option><option>checked</option><option>have checked</option><option>check</option></select> the alignment <span class="tw">for two hours</span> now.</li>
+      <li>The technician has <span class="tw">just</span> <select id="tn_7"><option value=""></option><option>finish</option><option>finished</option><option>finishes</option></select> the safety test.</li>
+      <li><select id="tn_8"><option value=""></option><option>Does</option><option>Did</option><option>Has</option></select> the machine start correctly <span class="tw">last night</span>?</li>
     </ol>
     <div class="modfoot"><button type="button" class="btn-val" data-act="validate" data-sec="TN Tenses">✓ Validate</button><span class="modmsg"></span></div>
   </div>
@@ -275,11 +275,11 @@
     <p class="instr">Lis la phrase française et choisis la bonne traduction anglaise. Le repère de temps te dit quel temps utiliser.</p>
     <ol class="q vmatch">
       <li>« Le technicien graisse les roulements chaque semaine. » <select id="tr_1"><option value=""></option><option>The technician greased the bearings every week.</option><option>The technician greases the bearings every week.</option></select></li>
-      <li>« Hier, la grue est tombée en panne. » <select id="tr_2"><option value=""></option><option>Yesterday, the crane broke down.</option><option>Yesterday, the crane has broken down.</option></select></li>
-      <li>« Depuis lundi, nous avons remplacé trois moteurs. » <select id="tr_3"><option value=""></option><option>Since Monday, we replaced three motors.</option><option>Since Monday, we have replaced three motors.</option></select></li>
-      <li>« L'usine fonctionne 24 heures sur 24. » <select id="tr_4"><option value=""></option><option>The factory runs 24 hours a day.</option><option>The factory ran 24 hours a day.</option></select></li>
-      <li>« Il y a un mois, ils ont modernisé la ligne de production. » <select id="tr_5"><option value=""></option><option>A month ago, they have modernized the production line.</option><option>A month ago, they modernized the production line.</option></select></li>
-      <li>« Le fournisseur nous livre des pièces depuis 2018. » <select id="tr_6"><option value=""></option><option>The supplier delivered parts to us since 2018.</option><option>The supplier has delivered parts to us since 2018.</option></select></li>
+      <li>« Hier, la grue est tombée en panne. » <select id="tr_2"><option value=""></option><option>Yesterday, the crane has broken down.</option><option>Yesterday, the crane broke down.</option></select></li>
+      <li>« Depuis lundi, nous avons remplacé trois moteurs. » <select id="tr_3"><option value=""></option><option>Since Monday, we have replaced three motors.</option><option>Since Monday, we replaced three motors.</option></select></li>
+      <li>« L'usine fonctionne 24 heures sur 24. » <select id="tr_4"><option value=""></option><option>The factory ran 24 hours a day.</option><option>The factory runs 24 hours a day.</option></select></li>
+      <li>« Il y a un mois, ils ont modernisé la ligne de production. » <select id="tr_5"><option value=""></option><option>A month ago, they modernized the production line.</option><option>A month ago, they have modernized the production line.</option></select></li>
+      <li>« Le fournisseur nous livre des pièces depuis 2018. » <select id="tr_6"><option value=""></option><option>The supplier has delivered parts to us since 2018.</option><option>The supplier delivered parts to us since 2018.</option></select></li>
       <li>« L'année dernière, le pont roulant a soulevé un moteur de 8 tonnes. » <select id="tr_7"><option value=""></option><option>Last year, the overhead crane lifted an 8-tonne motor.</option><option>Last year, the overhead crane has lifted an 8-tonne motor.</option></select></li>
       <li>« Nous n'avons pas encore réglé la pression. » <select id="tr_8"><option value=""></option><option>We haven't set the pressure yet.</option><option>We didn't set the pressure yet.</option></select></li>
     </ol>
@@ -291,13 +291,13 @@
     <div class="head"><span class="ico">🎯</span><h3>FOR or TO?</h3><span class="pts">8 pts</span></div>
     <p class="instr">« pour » se traduit par TO + verbe (le but) ou par FOR + nom. Choisis le bon mot.</p>
     <ol class="q">
-      <li>They used a crane <select id="ft_1"><option value=""></option><option>to</option><option>for</option></select> lift the press.</li>
-      <li>This sling is <select id="ft_2"><option value=""></option><option>for</option><option>to</option></select> heavy loads only.</li>
-      <li>He wore gloves <select id="ft_3"><option value=""></option><option>to</option><option>for</option></select> protect his hands.</li>
+      <li>They used a crane <select id="ft_1"><option value=""></option><option>for</option><option>to</option></select> lift the press.</li>
+      <li>This sling is <select id="ft_2"><option value=""></option><option>to</option><option>for</option></select> heavy loads only.</li>
+      <li>He wore gloves <select id="ft_3"><option value=""></option><option>for</option><option>to</option></select> protect his hands.</li>
       <li>Thank you <select id="ft_4"><option value=""></option><option>for</option><option>to</option></select> your help with the installation.</li>
-      <li>Théo checked the bolts <select id="ft_5"><option value=""></option><option>for</option><option>to</option></select> make sure they were tight.</li>
+      <li>Théo checked the bolts <select id="ft_5"><option value=""></option><option>to</option><option>for</option></select> make sure they were tight.</li>
       <li>This wrench is <select id="ft_6"><option value=""></option><option>to</option><option>for</option></select> tightening the anchor bolts.</li>
-      <li>They stopped the line <select id="ft_7"><option value=""></option><option>to</option><option>for</option></select> install the new machine.</li>
+      <li>They stopped the line <select id="ft_7"><option value=""></option><option>for</option><option>to</option></select> install the new machine.</li>
       <li>The team met <select id="ft_8"><option value=""></option><option>to</option><option>for</option></select> a safety briefing.</li>
     </ol>
     <div class="modfoot"><button type="button" class="btn-val" data-act="validate" data-sec="FT For/To">✓ Validate</button><span class="modmsg"></span></div>
@@ -308,14 +308,14 @@
     <div class="head"><span class="ico">💬</span><h3>Reported speech (said / told)</h3><span class="pts">8 pts</span></div>
     <p class="instr">On rapporte le dialogue du chantier. say / tell (+ personne) ; le temps recule (is → was, can → could, must → had to, have → had).</p>
     <ol class="q">
-      <li>"The load is very heavy," said the foreman. → The foreman said the load <select id="rs_1"><option value=""></option><option>was</option><option>has been</option><option>is</option></select> very heavy.</li>
-      <li>Théo <select id="rs_2"><option value=""></option><option>told</option><option>said</option><option>say</option></select> the operator to wait.</li>
-      <li>"I can lift it now." → The operator said he <select id="rs_3"><option value=""></option><option>will</option><option>can</option><option>could</option></select> lift it.</li>
-      <li>"We must check the slings." → Théo said they <select id="rs_4"><option value=""></option><option>had to</option><option>must</option><option>have to</option></select> check the slings.</li>
-      <li>"The area isn't clear." → Théo said the area <select id="rs_5"><option value=""></option><option>hasn't been</option><option>isn't</option><option>wasn't</option></select> clear.</li>
-      <li>"We have finished the alignment." → Théo said they <select id="rs_6"><option value=""></option><option>have</option><option>has</option><option>had</option></select> finished the alignment.</li>
-      <li>Théo <select id="rs_7"><option value=""></option><option>said</option><option>told</option><option>tell</option></select> that the machine was in position.</li>
-      <li>Théo told the operator <select id="rs_8"><option value=""></option><option>for</option><option>to</option><option>that</option></select> start the crane.</li>
+      <li>"The load is very heavy," said the foreman. → The foreman said the load <select id="rs_1"><option value=""></option><option>is</option><option>has been</option><option>was</option></select> very heavy.</li>
+      <li>Théo <select id="rs_2"><option value=""></option><option>say</option><option>said</option><option>told</option></select> the operator to wait.</li>
+      <li>"I can lift it now." → The operator said he <select id="rs_3"><option value=""></option><option>can</option><option>will</option><option>could</option></select> lift it.</li>
+      <li>"We must check the slings." → Théo said they <select id="rs_4"><option value=""></option><option>had to</option><option>have to</option><option>must</option></select> check the slings.</li>
+      <li>"The area isn't clear." → Théo said the area <select id="rs_5"><option value=""></option><option>isn't</option><option>wasn't</option><option>hasn't been</option></select> clear.</li>
+      <li>"We have finished the alignment." → Théo said they <select id="rs_6"><option value=""></option><option>has</option><option>had</option><option>have</option></select> finished the alignment.</li>
+      <li>Théo <select id="rs_7"><option value=""></option><option>tell</option><option>said</option><option>told</option></select> that the machine was in position.</li>
+      <li>Théo told the operator <select id="rs_8"><option value=""></option><option>that</option><option>to</option><option>for</option></select> start the crane.</li>
     </ol>
     <div class="modfoot"><button type="button" class="btn-val" data-act="validate" data-sec="RS Reported">✓ Validate</button><span class="modmsg"></span></div>
   </div>
@@ -398,35 +398,52 @@ function updateSubmitGate(){
   }
 }
 
-function confettiBurst(){
-  var box=document.getElementById("confetti");
-  var cols=CONF_COLORS;
-  for(var i=0;i<90;i++){
-    var c=document.createElement("div");c.className="conf";
-    c.style.left=(i/90*100)+"%";
-    c.style.background=cols[i%cols.length];
-    c.style.animationDuration=(2.2+ (i%5)*0.4)+"s";
-    c.style.animationDelay=((i%9)*0.06)+"s";
-    c.style.transform="rotate("+((i*37)%360)+"deg)";
-    box.appendChild(c);
-    (function(el){setTimeout(function(){el.remove();},4200);})(c);
-  }
+/* ---------- Confetti engine (vanilla canvas, physics — burst + gravity + spin + fade) ---------- */
+var _cv,_ctx,_parts=[],_raf=null;
+function _confInit(){
+  _cv=document.getElementById("confetti"); if(!_cv||!_cv.getContext) return;
+  _ctx=_cv.getContext("2d"); _confResize(); window.addEventListener("resize",_confResize);
 }
-
-// radial "explosion" from a point (x,y)
-function boom(x,y){
-  var box=document.getElementById("confetti");
-  var cols=CONF_COLORS;
-  for(var i=0;i<32;i++){
-    var ang=Math.PI*2*i/32, dist=70+(i%5)*30;
-    var p=document.createElement("div");p.className="burst-p";
-    p.style.left=x+"px";p.style.top=y+"px";p.style.background=cols[i%cols.length];
-    p.style.setProperty("--dx",(Math.cos(ang)*dist).toFixed(1)+"px");
-    p.style.setProperty("--dy",(Math.sin(ang)*dist).toFixed(1)+"px");
-    p.style.setProperty("--r",((i*47)%360)+"deg");
-    box.appendChild(p);
-    (function(el){setTimeout(function(){el.remove();},950);})(p);
+function _confResize(){ if(!_cv) return; _cv.width=window.innerWidth; _cv.height=window.innerHeight; }
+// physics burst of n particles shooting out from (x,y)
+function burst(x,y,n,power){
+  if(!_ctx) _confInit(); if(!_ctx) return;
+  n=n||90; power=power||1; var cols=CONF_COLORS;
+  for(var i=0;i<n;i++){
+    var ang=Math.random()*Math.PI*2, spd=(3+Math.random()*7)*power;
+    _parts.push({x:x,y:y,vx:Math.cos(ang)*spd,vy:Math.sin(ang)*spd-4,
+      g:0.16+Math.random()*0.14, size:5+Math.random()*7,
+      rot:Math.random()*6.28, vr:(Math.random()-0.5)*0.45,
+      color:cols[(Math.random()*cols.length)|0],
+      life:55+Math.random()*45, age:0, shape:Math.random()<0.5?"rect":"circ"});
   }
+  if(!_raf) _raf=requestAnimationFrame(_confTick);
+}
+function _confTick(){
+  if(!_ctx) return;
+  _ctx.clearRect(0,0,_cv.width,_cv.height);
+  for(var i=_parts.length-1;i>=0;i--){
+    var p=_parts[i]; p.age++; p.vy+=p.g; p.vx*=0.99; p.x+=p.vx; p.y+=p.vy; p.rot+=p.vr;
+    var a=Math.max(0,1-p.age/p.life);
+    _ctx.save(); _ctx.globalAlpha=a; _ctx.translate(p.x,p.y); _ctx.rotate(p.rot); _ctx.fillStyle=p.color;
+    if(p.shape==="rect") _ctx.fillRect(-p.size/2,-p.size/2,p.size,p.size*0.6);
+    else { _ctx.beginPath(); _ctx.arc(0,0,p.size/2,0,6.28); _ctx.fill(); }
+    _ctx.restore();
+    if(p.age>=p.life || p.y>_cv.height+50) _parts.splice(i,1);
+  }
+  if(_parts.length) _raf=requestAnimationFrame(_confTick);
+  else { _raf=null; _ctx.clearRect(0,0,_cv.width,_cv.height); }
+}
+// section-perfect explosion from a point (name/signature kept for validateSection)
+function boom(x,y){ burst(x,y,70,1.2); }
+// final win: staggered mega-celebration across the top of the screen (name kept for submitPaper)
+function confettiBurst(){
+  if(!_ctx) _confInit();
+  burst(window.innerWidth/2, window.innerHeight*0.35, 120, 1.4);
+  var n=0, iv=setInterval(function(){
+    burst(Math.random()*window.innerWidth, Math.random()*window.innerHeight*0.5, 80, 1.3);
+    if(++n>=9) clearInterval(iv);
+  },160);
 }
 
 // mark one item: color it, reveal the right answer if wrong, then LOCK it (no changing an error afterwards)
@@ -593,6 +610,7 @@ document.addEventListener("click",function(e){
 })();
 updateProgress();
 updateSubmitGate();
+_confInit();
 </script>
 </body>
 </html>
